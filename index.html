@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Política de privacidad de Room Dash, un videojuego de OLS Games.">
+  <meta name="robots" content="index,follow">
+  <title>Política de privacidad | Room Dash</title>
+
+  <style>
+    :root {
+      --bg: #07100b;
+      --bg-soft: #0b1710;
+      --panel: rgba(13, 29, 19, 0.94);
+      --panel-2: rgba(18, 36, 24, 0.90);
+      --text: #f4fff6;
+      --muted: #b9d0bf;
+      --green: #38f58c;
+      --green-soft: #91ffbd;
+      --yellow: #ffd21f;
+      --yellow-soft: #ffe77b;
+      --border: rgba(93, 255, 158, 0.20);
+      --border-yellow: rgba(255, 210, 31, 0.22);
+      --shadow: 0 28px 90px rgba(0, 0, 0, 0.42);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.68;
+      background:
+        radial-gradient(circle at 12% 0%, rgba(56, 245, 140, 0.18), transparent 34rem),
+        radial-gradient(circle at 92% 8%, rgba(255, 210, 31, 0.15), transparent 30rem),
+        linear-gradient(180deg, #07100b 0%, #08130d 55%, #050b07 100%);
+    }
+
+    a {
+      color: var(--yellow-soft);
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--green-soft);
+    }
+
+    .shell {
+      width: min(980px, calc(100% - 30px));
+      margin: 0 auto;
+      padding: 42px 0 76px;
+    }
+
+    .hero,
+    .content {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 6vw, 60px);
+      border-radius: var(--radius-lg);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(120deg, rgba(56,245,140,.08), transparent 40%),
+        linear-gradient(300deg, rgba(255,210,31,.08), transparent 45%);
+    }
+
+    .brand,
+    .hero h1,
+    .hero p,
+    .meta {
+      position: relative;
+      z-index: 1;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      padding: 7px 12px;
+      border: 1px solid var(--border-yellow);
+      border-radius: 999px;
+      color: var(--yellow-soft);
+      background: rgba(255, 210, 31, 0.06);
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green), var(--yellow));
+      box-shadow: 0 0 18px rgba(56, 245, 140, .65);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.5rem, 8vw, 5.4rem);
+      line-height: .98;
+      letter-spacing: -.06em;
+      background: linear-gradient(90deg, var(--green) 0%, var(--green-soft) 42%, var(--yellow) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2.2vw, 1.16rem);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .pill {
+      padding: 8px 13px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: #dff9e8;
+      background: rgba(56, 245, 140, .055);
+      font-size: .9rem;
+    }
+
+    .pill.yellow {
+      border-color: var(--border-yellow);
+      background: rgba(255, 210, 31, .055);
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 22px;
+    }
+
+    .nav a {
+      padding: 9px 14px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text);
+      background: rgba(56, 245, 140, .05);
+      text-decoration: none;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .nav a:nth-child(even) {
+      border-color: var(--border-yellow);
+      background: rgba(255, 210, 31, .045);
+    }
+
+    .nav a:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,.32);
+      background: rgba(255,255,255,.07);
+    }
+
+    .content {
+      padding: clamp(24px, 5vw, 46px);
+      border-radius: var(--radius-lg);
+    }
+
+    section + section {
+      margin-top: 36px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255,255,255,.09);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.35rem, 3vw, 1.7rem);
+      line-height: 1.2;
+      letter-spacing: -.025em;
+      color: var(--green-soft);
+    }
+
+    section:nth-of-type(even) h2 {
+      color: var(--yellow-soft);
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 1.08rem;
+      color: #ffffff;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 12px 0;
+      padding-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    strong {
+      color: #ffffff;
+    }
+
+    .notice {
+      margin: 18px 0;
+      padding: 16px 18px;
+      border-left: 4px solid var(--green);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      background:
+        linear-gradient(90deg, rgba(56,245,140,.10), rgba(255,210,31,.045));
+    }
+
+    .warning {
+      margin: 18px 0;
+      padding: 16px 18px;
+      border-left: 4px solid var(--yellow);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      background:
+        linear-gradient(90deg, rgba(255,210,31,.10), rgba(56,245,140,.035));
+    }
+
+    .contact-box {
+      padding: 18px;
+      border: 1px solid var(--border-yellow);
+      border-radius: var(--radius-md);
+      background: var(--panel-2);
+    }
+
+    code {
+      padding: 2px 7px;
+      border-radius: 7px;
+      color: var(--yellow-soft);
+      background: rgba(255, 210, 31, .08);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    footer {
+      padding: 28px 10px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(100% - 18px, 980px);
+        padding-top: 12px;
+      }
+
+      .hero,
+      .content {
+        border-radius: 21px;
+      }
+
+      .nav {
+        gap: 8px;
+      }
+
+      .nav a {
+        font-size: .9rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .nav a {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div class="brand"><span class="brand-dot"></span> OLS Games</div>
+      <h1>Room Dash</h1>
+      <p class="subtitle">
+        Política de privacidad sobre los datos utilizados por el juego,
+        sus anuncios recompensados y sus compras integradas.
+      </p>
+
+      <div class="meta">
+        <span class="pill">Última actualización: 3 de agosto de 2026</span>
+        <span class="pill yellow">Aplicación móvil</span>
+        <span class="pill">Sin cuentas de usuario</span>
+      </div>
+    </header>
+
+    <nav class="nav" aria-label="Navegación de la política">
+      <a href="#responsable">Responsable</a>
+      <a href="#datos">Datos</a>
+      <a href="#menores">Menores</a>
+      <a href="#compras">Compras</a>
+      <a href="#anuncios">Anuncios</a>
+      <a href="#derechos">Derechos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <article class="content">
+      <section id="responsable">
+        <h2>1. Responsable y alcance</h2>
+        <p>
+          Esta Política de privacidad se aplica a <strong>Room Dash</strong>,
+          un videojuego móvil publicado por <strong>OLS Games</strong>.
+          Explica cómo la aplicación y los servicios de terceros integrados
+          acceden, utilizan, procesan y comparten determinados datos técnicos.
+        </p>
+
+        <div class="notice">
+          <strong>Room Dash no permite crear cuentas ni iniciar sesión.</strong>
+          OLS Games no solicita nombres, direcciones postales, fotografías,
+          contactos, mensajes, datos sanitarios ni contraseñas.
+        </div>
+      </section>
+
+      <section id="datos">
+        <h2>2. Datos que pueden tratarse</h2>
+        <p>
+          Room Dash utiliza servicios de Google para publicidad recompensada
+          y compras integradas. Estos servicios pueden procesar las siguientes categorías:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Ubicación aproximada:</strong> inferida de forma general
+            a partir de la dirección IP. Room Dash no solicita ubicación precisa
+            ni acceso al GPS.
+          </li>
+          <li>
+            <strong>Interacciones con la aplicación:</strong> como la apertura
+            de la aplicación, las interacciones con anuncios y la visualización
+            de vídeos recompensados.
+          </li>
+          <li>
+            <strong>Diagnósticos:</strong> información técnica relacionada con
+            el funcionamiento del SDK publicitario, tiempos de inicio, errores
+            o rendimiento.
+          </li>
+          <li>
+            <strong>Identificadores del dispositivo o de otro tipo:</strong>
+            como identificadores publicitarios o técnicos, cuando estén disponibles
+            y su uso sea legalmente aplicable.
+          </li>
+          <li>
+            <strong>Historial de compras:</strong> producto adquirido, estado de
+            la operación y datos técnicos necesarios para confirmar, reconocer
+            o consumir una compra de orbes.
+          </li>
+        </ul>
+
+        <h3>Finalidades del tratamiento</h3>
+        <p>
+          Estos datos pueden utilizarse para proporcionar y medir anuncios,
+          analizar el funcionamiento de los servicios publicitarios, prevenir
+          fraude o abuso, proteger la seguridad y completar las compras integradas
+          solicitadas por el usuario.
+        </p>
+
+        <h3>Proveedores externos</h3>
+        <p>
+          Room Dash integra servicios proporcionados por Google, principalmente
+          <strong>Google Mobile Ads / AdMob</strong> y
+          <strong>Google Play Billing</strong>. Google puede tratar datos conforme
+          a sus propias condiciones y políticas:
+        </p>
+
+        <ul>
+          <li>
+            <a href="https://policies.google.com/privacy" rel="noopener noreferrer">
+              Política de privacidad de Google
+            </a>
+          </li>
+          <li>
+            <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure"
+               rel="noopener noreferrer">
+              Información sobre los datos del SDK de Google Mobile Ads
+            </a>
+          </li>
+          <li>
+            <a href="https://play.google.com/about/play-terms/" rel="noopener noreferrer">
+              Términos de Google Play
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="menores">
+        <h2>3. Usuarios menores de edad</h2>
+        <p>
+          Room Dash está diseñado para una audiencia mixta. Antes de cargar
+          publicidad, la aplicación puede solicitar una selección neutral del
+          grupo de edad. Se conserva localmente el grupo de edad necesario para
+          aplicar la configuración correspondiente, sin crear una cuenta.
+        </p>
+
+        <p>
+          Para usuarios identificados como menores, Room Dash aplica el tratamiento
+          publicitario restringido correspondiente, utiliza anuncios adecuados para
+          su edad y evita cargar publicidad antes de determinar el tratamiento aplicable.
+        </p>
+
+        <p>
+          Los padres o tutores pueden eliminar la selección de edad y otros datos
+          locales desde los ajustes de la aplicación, borrando los datos de Room Dash
+          desde Android o desinstalando el juego.
+        </p>
+      </section>
+
+      <section id="compras">
+        <h2>4. Compras integradas</h2>
+        <p>
+          Room Dash ofrece compras opcionales de paquetes de orbes mediante
+          Google Play Billing. El pago es procesado directamente por Google Play.
+          <strong>
+            OLS Games no recibe ni almacena números de tarjeta, datos bancarios
+            ni credenciales de pago.
+          </strong>
+        </p>
+
+        <p>
+          La aplicación puede recibir información técnica sobre la transacción
+          para entregar los orbes, verificar que la compra es válida, evitar
+          duplicados y gestionar errores o restauraciones cuando corresponda.
+        </p>
+      </section>
+
+      <section id="anuncios">
+        <h2>5. Anuncios recompensados</h2>
+        <p>
+          Los anuncios de Room Dash son recompensados y se muestran tras una
+          acción voluntaria del jugador. La recompensa se entrega únicamente
+          cuando el proveedor publicitario confirma que se han cumplido las
+          condiciones del anuncio.
+        </p>
+
+        <p>
+          Según la edad, la región y las opciones de privacidad disponibles,
+          los anuncios pueden ser personalizados, no personalizados o limitados.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Conservación y eliminación</h2>
+        <p>
+          OLS Games no opera un sistema propio de cuentas ni un servidor destinado
+          a almacenar perfiles personales de jugadores. Los datos locales, como
+          progreso, preferencias y grupo de edad, permanecen en el dispositivo
+          hasta que el usuario los restablece, borra los datos de la aplicación
+          o desinstala Room Dash.
+        </p>
+
+        <p>
+          Los proveedores externos pueden conservar datos durante los plazos
+          indicados en sus propias políticas y de acuerdo con sus obligaciones legales.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Seguridad</h2>
+        <p>
+          Las comunicaciones con los servicios de Google se realizan mediante
+          conexiones cifradas en tránsito. Ningún sistema conectado a Internet
+          puede garantizar una seguridad absoluta, pero OLS Games limita el
+          tratamiento a los datos necesarios para las funciones descritas.
+        </p>
+      </section>
+
+      <section id="derechos">
+        <h2>8. Opciones y derechos del usuario</h2>
+        <ul>
+          <li>Puedes evitar las compras integradas y los anuncios recompensados opcionales.</li>
+          <li>Puedes revisar o cambiar las opciones de privacidad disponibles en la aplicación.</li>
+          <li>Puedes restablecer los datos locales desde Android o desinstalar la aplicación.</li>
+          <li>Puedes limitar o restablecer el identificador publicitario desde los ajustes de Android.</li>
+          <li>Puedes ejercer los derechos reconocidos por la legislación aplicable mediante el canal de contacto.</li>
+        </ul>
+      </section>
+
+      <section id="contacto">
+        <h2>9. Contacto</h2>
+
+        <div class="contact-box">
+          <p>
+            Para consultas o solicitudes relacionadas con la privacidad de Room Dash,
+            escribe a:
+          </p>
+          <p><strong>REEMPLAZAR_POR_TU_CORREO_DE_SOPORTE</strong></p>
+          <p>
+            Utiliza como asunto <code>Privacidad - Room Dash</code> y evita enviar
+            datos sensibles que no sean necesarios.
+          </p>
+        </div>
+
+        <div class="warning">
+          Antes de publicar esta página, sustituye
+          <strong>REEMPLAZAR_POR_TU_CORREO_DE_SOPORTE</strong>
+          por el correo real que utilizarás en Google Play Console.
+        </div>
+      </section>
+
+      <section>
+        <h2>10. Cambios en esta política</h2>
+        <p>
+          Esta política puede actualizarse cuando cambien las funciones de
+          Room Dash, los SDK utilizados o los requisitos legales y de Google Play.
+          La fecha de la última revisión aparecerá en la parte superior.
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      © 2026 OLS Games · Room Dash
+    </footer>
+  </main>
+</body>
+</html>
