@@ -6,96 +6,1177 @@
   <meta name="color-scheme" content="dark">
   <meta name="description" content="Official support page for Room Dash by OLS Games.">
   <meta name="robots" content="index,follow">
+
   <title>Support | Room Dash</title>
-  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
+  <!-- hCaptcha -->
+  <script
+    src="https://js.hcaptcha.com/1/api.js"
+    async
+    defer>
+  </script>
+
   <style>
-    :root{--bg:#07100b;--panel:rgba(13,29,19,.94);--panel2:rgba(18,36,24,.90);--text:#f4fff6;--muted:#b9d0bf;--green:#38f58c;--greenSoft:#91ffbd;--yellow:#ffd21f;--yellowSoft:#ffe77b;--border:rgba(93,255,158,.20);--borderYellow:rgba(255,210,31,.22);--shadow:0 28px 90px rgba(0,0,0,.42);--radiusLg:28px;--radiusMd:18px}
-    *{box-sizing:border-box} html{scroll-behavior:smooth}
-    body{margin:0;min-height:100vh;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.68;background:radial-gradient(circle at 12% 0%,rgba(56,245,140,.18),transparent 34rem),radial-gradient(circle at 92% 8%,rgba(255,210,31,.15),transparent 30rem),linear-gradient(180deg,#07100b 0%,#08130d 55%,#050b07 100%)}
-    a{color:var(--yellowSoft);text-underline-offset:3px} a:hover{color:var(--greenSoft)}
-    .shell{width:min(980px,calc(100% - 30px));margin:0 auto;padding:42px 0 76px}
-    .hero,.content{border:1px solid var(--border);background:var(--panel);box-shadow:var(--shadow);backdrop-filter:blur(14px)}
-    .hero{position:relative;overflow:hidden;padding:clamp(28px,6vw,60px);border-radius:var(--radiusLg)}
-    .hero:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(120deg,rgba(56,245,140,.08),transparent 40%),linear-gradient(300deg,rgba(255,210,31,.08),transparent 45%)}
-    .brand,.hero h1,.hero p,.hero-actions{position:relative;z-index:1}
-    .brand{display:inline-flex;align-items:center;gap:10px;margin-bottom:18px;padding:7px 12px;border:1px solid var(--borderYellow);border-radius:999px;color:var(--yellowSoft);background:rgba(255,210,31,.06);font-size:.82rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-    .brand-dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--yellow));box-shadow:0 0 18px rgba(56,245,140,.65)}
-    h1{margin:0;font-size:clamp(2.5rem,8vw,5.4rem);line-height:.98;letter-spacing:-.06em;background:linear-gradient(90deg,var(--green) 0%,var(--greenSoft) 42%,var(--yellow) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-    .subtitle{max-width:760px;margin:22px 0 0;color:var(--muted);font-size:clamp(1rem,2.2vw,1.16rem)}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-    .pill-link{padding:9px 14px;border:1px solid var(--border);border-radius:999px;color:var(--text);background:rgba(56,245,140,.05);text-decoration:none;transition:.18s ease}.pill-link.yellow{border-color:var(--borderYellow);background:rgba(255,210,31,.045)}.pill-link:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.32);background:rgba(255,255,255,.07)}
-    .content{margin-top:22px;padding:clamp(24px,5vw,46px);border-radius:var(--radiusLg)}
-    h2{margin:0 0 10px;font-size:clamp(1.45rem,3vw,1.85rem);line-height:1.2;letter-spacing:-.025em;color:var(--greenSoft)}
-    .lead{margin:0 0 28px;color:var(--muted)}
-    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}
-    label{font-weight:750;color:#fff}.required{color:var(--yellow);margin-left:2px}
-    input,select,textarea{width:100%;border:1px solid var(--border);border-radius:14px;padding:13px 14px;color:var(--text);background:rgba(4,13,8,.72);font:inherit;outline:none;transition:.16s ease}
-    input:focus,select:focus,textarea:focus{border-color:rgba(56,245,140,.72);box-shadow:0 0 0 4px rgba(56,245,140,.09);background:rgba(5,16,10,.9)}
-    textarea{min-height:180px;resize:vertical}.hint{color:var(--muted);font-size:.9rem}
-    .captcha-wrap{margin-top:6px;padding:18px;border:1px solid var(--borderYellow);border-radius:var(--radiusMd);background:var(--panel2)}.captcha-title{margin:0 0 12px;font-weight:800;color:var(--yellowSoft)}
-    .submit-row{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-top:22px}
-    button{appearance:none;border:1px solid rgba(56,245,140,.50);border-radius:14px;padding:13px 20px;color:#041109;background:linear-gradient(90deg,var(--green),var(--greenSoft));font:inherit;font-weight:900;letter-spacing:.025em;cursor:pointer;transition:.16s ease}button:hover:not(:disabled){transform:translateY(-1px);filter:brightness(1.04)}button:disabled{cursor:not-allowed;opacity:.35;filter:grayscale(.5)}
-    .status{min-height:1.5em;color:var(--muted);font-size:.93rem}
-    .notice{margin-top:28px;padding:16px 18px;border-left:4px solid var(--yellow);border-radius:0 var(--radiusMd) var(--radiusMd) 0;background:linear-gradient(90deg,rgba(255,210,31,.10),rgba(56,245,140,.035));color:var(--muted)}
-    .fallback{margin-top:24px;padding:18px;border:1px solid var(--border);border-radius:var(--radiusMd);background:rgba(56,245,140,.04)}.fallback strong{color:#fff}
-    footer{padding:28px 10px 0;color:var(--muted);text-align:center;font-size:.9rem}
-    @media(max-width:700px){.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}}
-    @media(max-width:640px){.shell{width:min(100% - 18px,980px);padding-top:12px}.hero,.content{border-radius:21px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill-link,button{transition:none}}
+    :root {
+      --bg: #07100b;
+      --panel: rgba(13, 29, 19, .94);
+      --panel2: rgba(18, 36, 24, .90);
+      --text: #f4fff6;
+      --muted: #b9d0bf;
+      --green: #38f58c;
+      --greenSoft: #91ffbd;
+      --yellow: #ffd21f;
+      --yellowSoft: #ffe77b;
+      --border: rgba(93, 255, 158, .20);
+      --borderYellow: rgba(255, 210, 31, .22);
+      --shadow: 0 28px 90px rgba(0, 0, 0, .42);
+      --radiusLg: 28px;
+      --radiusMd: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      line-height: 1.68;
+
+      background:
+        radial-gradient(
+          circle at 12% 0%,
+          rgba(56, 245, 140, .18),
+          transparent 34rem
+        ),
+        radial-gradient(
+          circle at 92% 8%,
+          rgba(255, 210, 31, .15),
+          transparent 30rem
+        ),
+        linear-gradient(
+          180deg,
+          #07100b 0%,
+          #08130d 55%,
+          #050b07 100%
+        );
+    }
+
+    a {
+      color: var(--yellowSoft);
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--greenSoft);
+    }
+
+    .shell {
+      width: min(980px, calc(100% - 30px));
+      margin: 0 auto;
+      padding: 42px 0 76px;
+    }
+
+    .hero,
+    .content {
+      border: 1px solid var(--border);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+
+      padding: clamp(28px, 6vw, 60px);
+
+      border-radius: var(--radiusLg);
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      pointer-events: none;
+
+      background:
+        linear-gradient(
+          120deg,
+          rgba(56, 245, 140, .08),
+          transparent 40%
+        ),
+        linear-gradient(
+          300deg,
+          rgba(255, 210, 31, .08),
+          transparent 45%
+        );
+    }
+
+    .brand,
+    .hero h1,
+    .hero p,
+    .hero-actions {
+      position: relative;
+      z-index: 1;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+
+      gap: 10px;
+
+      margin-bottom: 18px;
+
+      padding: 7px 12px;
+
+      border: 1px solid var(--borderYellow);
+      border-radius: 999px;
+
+      color: var(--yellowSoft);
+
+      background: rgba(255, 210, 31, .06);
+
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+
+      text-transform: uppercase;
+    }
+
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+
+      border-radius: 50%;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--green),
+          var(--yellow)
+        );
+
+      box-shadow:
+        0 0 18px rgba(56, 245, 140, .65);
+    }
+
+    h1 {
+      margin: 0;
+
+      font-size: clamp(2.5rem, 8vw, 5.4rem);
+
+      line-height: .98;
+
+      letter-spacing: -.06em;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--green) 0%,
+          var(--greenSoft) 42%,
+          var(--yellow) 100%
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .subtitle {
+      max-width: 760px;
+
+      margin: 22px 0 0;
+
+      color: var(--muted);
+
+      font-size:
+        clamp(
+          1rem,
+          2.2vw,
+          1.16rem
+        );
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 10px;
+
+      margin-top: 26px;
+    }
+
+    .pill-link {
+      padding: 9px 14px;
+
+      border: 1px solid var(--border);
+      border-radius: 999px;
+
+      color: var(--text);
+
+      background:
+        rgba(
+          56,
+          245,
+          140,
+          .05
+        );
+
+      text-decoration: none;
+
+      transition: .18s ease;
+    }
+
+    .pill-link.yellow {
+      border-color: var(--borderYellow);
+
+      background:
+        rgba(
+          255,
+          210,
+          31,
+          .045
+        );
+    }
+
+    .pill-link:hover {
+      transform:
+        translateY(-2px);
+
+      border-color:
+        rgba(
+          255,
+          255,
+          255,
+          .32
+        );
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          .07
+        );
+    }
+
+    .content {
+      margin-top: 22px;
+
+      padding:
+        clamp(
+          24px,
+          5vw,
+          46px
+        );
+
+      border-radius:
+        var(--radiusLg);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+
+      font-size:
+        clamp(
+          1.45rem,
+          3vw,
+          1.85rem
+        );
+
+      line-height: 1.2;
+
+      letter-spacing: -.025em;
+
+      color:
+        var(--greenSoft);
+    }
+
+    .lead {
+      margin: 0 0 28px;
+
+      color:
+        var(--muted);
+    }
+
+    .form-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 18px;
+    }
+
+    .field {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 8px;
+    }
+
+    .field.full {
+      grid-column:
+        1 / -1;
+    }
+
+    label {
+      font-weight: 750;
+
+      color: #fff;
+    }
+
+    .required {
+      color:
+        var(--yellow);
+
+      margin-left: 2px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius:
+        14px;
+
+      padding:
+        13px 14px;
+
+      color:
+        var(--text);
+
+      background:
+        rgba(
+          4,
+          13,
+          8,
+          .72
+        );
+
+      font: inherit;
+
+      outline: none;
+
+      transition:
+        .16s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color:
+        rgba(
+          56,
+          245,
+          140,
+          .72
+        );
+
+      box-shadow:
+        0 0 0 4px
+        rgba(
+          56,
+          245,
+          140,
+          .09
+        );
+
+      background:
+        rgba(
+          5,
+          16,
+          10,
+          .9
+        );
+    }
+
+    textarea {
+      min-height: 180px;
+
+      resize: vertical;
+    }
+
+    .hint {
+      color:
+        var(--muted);
+
+      font-size:
+        .9rem;
+    }
+
+    .captcha-wrap {
+      margin-top: 6px;
+
+      padding: 18px;
+
+      border:
+        1px solid
+        var(--borderYellow);
+
+      border-radius:
+        var(--radiusMd);
+
+      background:
+        var(--panel2);
+    }
+
+    .captcha-title {
+      margin:
+        0 0 12px;
+
+      font-weight: 800;
+
+      color:
+        var(--yellowSoft);
+    }
+
+    .submit-row {
+      display: flex;
+
+      align-items: center;
+
+      flex-wrap: wrap;
+
+      gap: 14px;
+
+      margin-top: 22px;
+    }
+
+    button {
+      appearance: none;
+
+      border:
+        1px solid
+        rgba(
+          56,
+          245,
+          140,
+          .50
+        );
+
+      border-radius:
+        14px;
+
+      padding:
+        13px 20px;
+
+      color:
+        #041109;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--green),
+          var(--greenSoft)
+        );
+
+      font: inherit;
+
+      font-weight: 900;
+
+      letter-spacing:
+        .025em;
+
+      cursor: pointer;
+
+      transition:
+        .16s ease;
+    }
+
+    button:hover:not(:disabled) {
+      transform:
+        translateY(-1px);
+
+      filter:
+        brightness(1.04);
+    }
+
+    button:disabled {
+      cursor:
+        not-allowed;
+
+      opacity: .35;
+
+      filter:
+        grayscale(.5);
+    }
+
+    .status {
+      min-height:
+        1.5em;
+
+      color:
+        var(--muted);
+
+      font-size:
+        .93rem;
+    }
+
+    .notice {
+      margin-top:
+        28px;
+
+      padding:
+        16px 18px;
+
+      border-left:
+        4px solid
+        var(--yellow);
+
+      border-radius:
+        0
+        var(--radiusMd)
+        var(--radiusMd)
+        0;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(
+            255,
+            210,
+            31,
+            .10
+          ),
+          rgba(
+            56,
+            245,
+            140,
+            .035
+          )
+        );
+
+      color:
+        var(--muted);
+    }
+
+    .fallback {
+      margin-top:
+        24px;
+
+      padding:
+        18px;
+
+      border:
+        1px solid
+        var(--border);
+
+      border-radius:
+        var(--radiusMd);
+
+      background:
+        rgba(
+          56,
+          245,
+          140,
+          .04
+        );
+    }
+
+    .fallback strong {
+      color: #fff;
+    }
+
+    footer {
+      padding:
+        28px 10px 0;
+
+      color:
+        var(--muted);
+
+      text-align:
+        center;
+
+      font-size:
+        .9rem;
+    }
+
+    @media (max-width: 700px) {
+
+      .form-grid {
+        grid-template-columns:
+          1fr;
+      }
+
+      .field.full {
+        grid-column:
+          auto;
+      }
+
+    }
+
+    @media (max-width: 640px) {
+
+      .shell {
+        width:
+          min(
+            100% - 18px,
+            980px
+          );
+
+        padding-top:
+          12px;
+      }
+
+      .hero,
+      .content {
+        border-radius:
+          21px;
+      }
+
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior:
+          auto;
+      }
+
+      .pill-link,
+      button {
+        transition:
+          none;
+      }
+
+    }
   </style>
 </head>
+
 <body>
+
   <main class="shell">
+
     <header class="hero">
-      <div class="brand"><span class="brand-dot"></span> OLS Games</div>
-      <h1>Room Dash Support</h1>
-      <p class="subtitle">Need help with Room Dash? Send us a support request and we will review it as soon as possible.</p>
-      <div class="hero-actions">
-        <a class="pill-link" href="./">Privacy Policy</a>
-        <a class="pill-link yellow" href="mailto:olsgames.support@gmail.com">Email Support</a>
+
+      <div class="brand">
+        <span class="brand-dot"></span>
+        OLS Games
       </div>
+
+      <h1>
+        Room Dash Support
+      </h1>
+
+      <p class="subtitle">
+        Need help with Room Dash?
+        Send us a support request and
+        we will review it as soon as possible.
+      </p>
+
+      <div class="hero-actions">
+
+        <a
+          class="pill-link"
+          href="./">
+          Privacy Policy
+        </a>
+
+        <a
+          class="pill-link yellow"
+          href="mailto:olsgames.support@gmail.com">
+          Email Support
+        </a>
+
+      </div>
+
     </header>
 
-    <section class="content">
-      <h2>Contact Support</h2>
-      <p class="lead">Complete the form below. All fields marked with * are required. A CAPTCHA verification is mandatory before the request can be submitted.</p>
 
-      <!-- CONFIGURE BEFORE PUBLISHING:
-           1) Replace YOUR_FORM_ID with your Formspree form ID.
-           2) Replace YOUR_HCAPTCHA_SITE_KEY with the public hCaptcha Site Key.
-           3) In Formspree enable CAPTCHA and configure the hCaptcha account secret.
-           NEVER place the hCaptcha secret key in this public HTML file. -->
-      <form id="support-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" accept-charset="UTF-8">
-        <input type="hidden" name="_subject" value="Room Dash Support Request">
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+    <section class="content">
+
+      <h2>
+        Contact Support
+      </h2>
+
+      <p class="lead">
+        Complete the form below.
+        All fields marked with * are required.
+        A CAPTCHA verification is mandatory
+        before the request can be submitted.
+      </p>
+
+
+      <!--
+        FORM CONFIGURATION
+
+        Replace YOUR_FORM_ID
+        with your real Formspree Form ID.
+
+        The hCaptcha Site Key
+        is already configured.
+
+        NEVER put the hCaptcha
+        Secret Key in this file.
+      -->
+
+
+      <form
+        id="support-form"
+
+        action="https://formspree.io/f/YOUR_FORM_ID"
+
+        method="POST"
+
+        accept-charset="UTF-8"
+      >
+
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="Room Dash Support Request"
+        >
+
+
+        <!-- Anti-spam honeypot -->
+        <input
+          type="text"
+          name="_gotcha"
+          tabindex="-1"
+          autocomplete="off"
+          style="
+            position:absolute;
+            left:-9999px;
+          "
+          aria-hidden="true"
+        >
+
+
         <div class="form-grid">
-          <div class="field"><label for="name">Name<span class="required">*</span></label><input id="name" name="name" type="text" maxlength="80" autocomplete="name" required></div>
-          <div class="field"><label for="email">Email address<span class="required">*</span></label><input id="email" name="email" type="email" maxlength="180" autocomplete="email" required></div>
-          <div class="field"><label for="category">Request type<span class="required">*</span></label><select id="category" name="category" required><option value="" selected disabled>Select a category</option><option>Technical issue</option><option>Bug report</option><option>Purchase issue</option><option>Gameplay question</option><option>Privacy request</option><option>Other</option></select></div>
-          <div class="field"><label for="subject">Subject<span class="required">*</span></label><input id="subject" name="subject" type="text" maxlength="120" required></div>
-          <div class="field full"><label for="message">Message<span class="required">*</span></label><textarea id="message" name="message" maxlength="4000" required></textarea><div class="hint">Maximum 4,000 characters. Do not include passwords or payment card details.</div></div>
-          <div class="field full captcha-wrap"><p class="captcha-title">Human verification</p><div class="h-captcha" data-sitekey="YOUR_HCAPTCHA_SITE_KEY" data-theme="dark" data-callback="captchaPassed" data-expired-callback="captchaExpired" data-error-callback="captchaError"></div><div class="hint">The Send Request button remains locked until the CAPTCHA is completed.</div></div>
+
+
+          <div class="field">
+
+            <label for="name">
+              Name
+              <span class="required">*</span>
+            </label>
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              maxlength="80"
+              autocomplete="name"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="email">
+              Email address
+              <span class="required">*</span>
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              maxlength="180"
+              autocomplete="email"
+              required
+            >
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="category">
+              Request type
+              <span class="required">*</span>
+            </label>
+
+            <select
+              id="category"
+              name="category"
+              required
+            >
+
+              <option
+                value=""
+                selected
+                disabled>
+                Select a category
+              </option>
+
+              <option>
+                Technical issue
+              </option>
+
+              <option>
+                Bug report
+              </option>
+
+              <option>
+                Purchase issue
+              </option>
+
+              <option>
+                Gameplay question
+              </option>
+
+              <option>
+                Privacy request
+              </option>
+
+              <option>
+                Other
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="field">
+
+            <label for="subject">
+              Subject
+              <span class="required">*</span>
+            </label>
+
+            <input
+              id="subject"
+              name="subject"
+              type="text"
+              maxlength="120"
+              required
+            >
+
+          </div>
+
+
+          <div class="field full">
+
+            <label for="message">
+              Message
+              <span class="required">*</span>
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              maxlength="4000"
+              required>
+            </textarea>
+
+            <div class="hint">
+              Maximum 4,000 characters.
+              Do not include passwords or payment card details.
+            </div>
+
+          </div>
+
+
+          <!-- CAPTCHA -->
+          <div class="field full captcha-wrap">
+
+            <p class="captcha-title">
+              Human verification
+            </p>
+
+
+            <div
+              class="h-captcha"
+
+              data-sitekey="5b0064ae-0150-463a-9952-cc9264cc5d54"
+
+              data-theme="dark"
+
+              data-callback="captchaPassed"
+
+              data-expired-callback="captchaExpired"
+
+              data-error-callback="captchaError">
+            </div>
+
+
+            <div class="hint">
+              The Send Request button remains locked
+              until the CAPTCHA is completed.
+            </div>
+
+          </div>
+
+
         </div>
-        <div class="submit-row"><button id="submit-button" type="submit" disabled>SEND REQUEST</button><div id="form-status" class="status" role="status" aria-live="polite">Complete the CAPTCHA to unlock submission.</div></div>
+
+
+        <div class="submit-row">
+
+          <button
+            id="submit-button"
+            type="submit"
+            disabled>
+            SEND REQUEST
+          </button>
+
+
+          <div
+            id="form-status"
+            class="status"
+            role="status"
+            aria-live="polite">
+
+            Complete the CAPTCHA to unlock submission.
+
+          </div>
+
+        </div>
+
+
       </form>
 
-      <div class="notice">For your security, never include passwords, full payment card numbers, banking credentials, authentication codes or other unnecessary sensitive information in a support request.</div>
-      <div class="fallback"><strong>Alternative contact:</strong> <a href="mailto:olsgames.support@gmail.com">olsgames.support@gmail.com</a></div>
+
+      <div class="notice">
+
+        For your security,
+        never include passwords,
+        full payment card numbers,
+        banking credentials,
+        authentication codes
+        or other unnecessary sensitive information
+        in a support request.
+
+      </div>
+
+
+      <div class="fallback">
+
+        <strong>
+          Alternative contact:
+        </strong>
+
+        <a
+          href="mailto:olsgames.support@gmail.com">
+          olsgames.support@gmail.com
+        </a>
+
+      </div>
+
+
     </section>
-    <footer>OLS Games · Room Dash</footer>
+
+
+    <footer>
+      OLS Games · Room Dash
+    </footer>
+
+
   </main>
 
+
   <script>
-    const form=document.getElementById('support-form');
-    const submitButton=document.getElementById('submit-button');
-    const statusBox=document.getElementById('form-status');
-    const captchaBox=document.querySelector('.h-captcha');
-    function configured(){return !form.action.includes('YOUR_FORM_ID')&&!captchaBox.dataset.sitekey.includes('YOUR_HCAPTCHA_SITE_KEY')}
-    window.captchaPassed=function(){if(!configured()){submitButton.disabled=true;statusBox.textContent='Support form configuration is incomplete.';return}submitButton.disabled=false;statusBox.textContent='Verification complete. You can send your request.'}
-    window.captchaExpired=function(){submitButton.disabled=true;statusBox.textContent='CAPTCHA expired. Please verify again.'}
-    window.captchaError=function(){submitButton.disabled=true;statusBox.textContent='CAPTCHA could not load. Please try again.'}
-    form.addEventListener('submit',function(e){const token=form.querySelector('[name="h-captcha-response"]');if(!configured()){e.preventDefault();submitButton.disabled=true;statusBox.textContent='This support form has not been configured yet.';return}if(!token||!token.value){e.preventDefault();submitButton.disabled=true;statusBox.textContent='Complete the CAPTCHA before sending your request.';return}submitButton.disabled=true;statusBox.textContent='Sending request…'})
-    if(!configured())statusBox.textContent='Formspree and hCaptcha keys must be configured before publishing.';
+
+    const form =
+      document.getElementById(
+        "support-form"
+      );
+
+    const submitButton =
+      document.getElementById(
+        "submit-button"
+      );
+
+    const statusBox =
+      document.getElementById(
+        "form-status"
+      );
+
+    const captchaBox =
+      document.querySelector(
+        ".h-captcha"
+      );
+
+
+    /*
+      Checks whether the external
+      services have been configured.
+
+      YOUR_FORM_ID remains here intentionally.
+      Do NOT replace the text inside this check.
+    */
+
+    function configured() {
+
+      return (
+        !form.action.includes(
+          "YOUR_FORM_ID"
+        )
+        &&
+        !captchaBox.dataset.sitekey.includes(
+          "YOUR_HCAPTCHA_SITE_KEY"
+        )
+      );
+
+    }
+
+
+    /*
+      Called automatically by hCaptcha
+      after successful verification.
+    */
+
+    window.captchaPassed =
+      function () {
+
+        if (!configured()) {
+
+          submitButton.disabled =
+            true;
+
+          statusBox.textContent =
+            "Support form configuration is incomplete.";
+
+          return;
+
+        }
+
+        submitButton.disabled =
+          false;
+
+        statusBox.textContent =
+          "Verification complete. You can send your request.";
+
+      };
+
+
+    /*
+      Called if the CAPTCHA expires.
+    */
+
+    window.captchaExpired =
+      function () {
+
+        submitButton.disabled =
+          true;
+
+        statusBox.textContent =
+          "CAPTCHA expired. Please verify again.";
+
+      };
+
+
+    /*
+      Called if hCaptcha fails.
+    */
+
+    window.captchaError =
+      function () {
+
+        submitButton.disabled =
+          true;
+
+        statusBox.textContent =
+          "CAPTCHA could not load. Please try again.";
+
+      };
+
+
+    /*
+      Final browser-side check
+      before sending the form.
+    */
+
+    form.addEventListener(
+      "submit",
+      function (event) {
+
+        const token =
+          form.querySelector(
+            '[name="h-captcha-response"]'
+          );
+
+
+        if (!configured()) {
+
+          event.preventDefault();
+
+          submitButton.disabled =
+            true;
+
+          statusBox.textContent =
+            "This support form has not been configured yet.";
+
+          return;
+
+        }
+
+
+        if (
+          !token
+          ||
+          !token.value
+        ) {
+
+          event.preventDefault();
+
+          submitButton.disabled =
+            true;
+
+          statusBox.textContent =
+            "Complete the CAPTCHA before sending your request.";
+
+          return;
+
+        }
+
+
+        submitButton.disabled =
+          true;
+
+        statusBox.textContent =
+          "Sending request…";
+
+      }
+    );
+
+
+    /*
+      Initial status
+    */
+
+    if (!configured()) {
+
+      statusBox.textContent =
+        "Formspree must be configured before publishing.";
+
+    }
+
   </script>
+
+
 </body>
 </html>
